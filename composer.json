@@ -1,0 +1,31 @@
+{
+    "name": "mt1sk/livewire-multiselect",
+    "description": "Livewire multiselect",
+    "type": "library",
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "^7.0|^8.0|^9.0",
+        "illuminate/database": "^7.0|^8.0|^9.0",
+        "livewire/livewire": "^2.4"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "mt1sk",
+            "email": "mt1sk@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "LivewireMultiselect\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LivewireMultiselect\\MultiselectServiceProvider"
+            ]
+        }
+    }
+}
