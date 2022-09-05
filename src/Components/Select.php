@@ -123,7 +123,7 @@ class Select extends Component
     {
         return $this->options
             ->when($this->search, function (Collection $options) {
-                return $options->filter(fn ($option, $key) => stristr($option[$this->label], $this->search) !== false);
+                return $options->filter(fn ($option, $key) => mb_stristr($option[$this->label], $this->search) !== false);
             });
     }
 
